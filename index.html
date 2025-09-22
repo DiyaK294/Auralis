@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auralis Studio — Creative Web Experiences</title>
+  <meta name="description" content="Auralis crafts fast, cinematic web experiences with delightful details." />
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- Inline favicon as data URI -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="%234d7cff"/><stop offset=".6" stop-color="%239b8cff"/><stop offset="1" stop-color="%23ff7a59"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="none"/><g fill="url(%23a)"><path d="M32 6 6 32l26 26 26-26L32 6zm0 8 18 18-18 18L14 32 32 14z"/><path d="M12 40c8 0 16-16 20-16s12 16 20 16" fill="none" stroke="url(%23a)" stroke-width="3" stroke-linecap="round"/></g></svg>'
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Auralis home">
+          <span class="glyph" aria-hidden="true">◆</span>
+          <span class="brand-text">Auralis Studio</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+          </button>
+          <ul id="nav-menu" class="nav-list">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#studio">Studio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="sun" aria-hidden="true">☀️</span>
+                <span class="moon" aria-hidden="true">🌙</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="home" class="section-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Creative Web Studio</p>
+            <h1 class="headline">
+              Cinematic sites.<br />
+              Blazing performance.<br />
+              <span class="accent">Crafted with taste.</span>
+            </h1>
+            <p class="subhead">
+              We design & build expressive experiences that feel effortless—clean architecture,
+              delightful motion, and measurable results.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#work">See our work</a>
+              <a class="btn ghost" href="#contact" data-scroll>Start a project</a>
+            </div>
+            <ul class="cred-list" aria-label="Highlights">
+              <li>⚡ INP-friendly interactions</li>
+              <li>🎯 SEO & a11y built-in</li>
+              <li>🛡️ Secure, scalable foundations</li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <!-- Decorative canvas-like gradient card -->
+            <div class="hero-card" role="img" aria-label="Abstract solar gradient with flux lines">
+              <div class="glow a"></div>
+              <div class="glow b"></div>
+              <div class="mesh"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK GRID -->
+      <section id="work" class="section section-work">
+        <div class="container">
+          <div class="section-head">
+            <h2>Selected work</h2>
+            <p>Recent explorations across e-commerce, content, and product marketing.</p>
+          </div>
+
+          <div class="grid cards" data-io>
+            <!-- Card 1 -->
+            <article class="card" tabindex="0">
+              <div class="card-media placeholder" aria-hidden="true">
+                <!-- inline SVG placeholder -->
+                <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g1" x1="0" x2="1">
+                      <stop offset="0" stop-color="var(--g1)" />
+                      <stop offset="1" stop-color="var(--g2)" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="500" fill="url(#g1)" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h3>Bloom Coffee</h3>
+                <p>Warm, aroma-rich brand site with single-origin product pages and subscription flows.</p>
+                <div class="tags"><span>Commerce</span><span>Brand</span><span>Perf 100</span></div>
+              </div>
+            </article>
+            <!-- Card 2 -->
+            <article class="card" tabindex="0">
+              <div class="card-media placeholder" aria-hidden="true">
+                <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g2" x1="0" x2="1">
+                      <stop offset="0" stop-color="var(--g3)" />
+                      <stop offset="1" stop-color="var(--g4)" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="500" fill="url(#g2)" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h3>Fluxo Labs</h3>
+                <p>Playful product narratives with scroll-tied animation and zero CLS.</p>
+                <div class="tags"><span>Story</span><span>Motion</span><span>INP &lt; 120ms</span></div>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="card" tabindex="0">
+              <div class="card-media placeholder" aria-hidden="true">
+                <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g3" x1="0" x2="1">
+                      <stop offset="0" stop-color="var(--g5)" />
+                      <stop offset="1" stop-color="var(--g6)" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="500" fill="url(#g3)" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h3>Solaria</h3>
+                <p>Solar-themed aesthetic with reactive lighting and glass surfaces.</p>
+                <div class="tags"><span>Visual</span><span>3D feel</span><span>AA contrast</span></div>
+              </div>
+            </article>
+            <!-- Card 4 -->
+            <article class="card" tabindex="0">
+              <div class="card-media placeholder" aria-hidden="true">
+                <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="g4" x1="0" x2="1">
+                      <stop offset="0" stop-color="var(--g2)" />
+                      <stop offset="1" stop-color="var(--g5)" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="500" fill="url(#g4)" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h3>Wildgrain</h3>
+                <p>Editorial feel with crisp typography and buttery transitions.</p>
+                <div class="tags"><span>Content</span><span>Typo</span><span>Edge-ready</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDIO -->
+      <section id="studio" class="section section-studio">
+        <div class="container studio-grid">
+          <div class="studio-copy">
+            <h2>Studio principles</h2>
+            <ul class="pill-list">
+              <li>Performance first</li>
+              <li>Accessible by default</li>
+              <li>Motion with meaning</li>
+              <li>Maintainable systems</li>
+            </ul>
+            <p class="lead">
+              We blend systems thinking with art direction. From brand narrative to
+              micro-interaction, everything earns its keep.
+            </p>
+            <div class="stats">
+              <div><span class="stat">98</span><span class="label">Lighthouse avg</span></div>
+              <div><span class="stat">12+</span><span class="label">industries</span></div>
+              <div><span class="stat">0</span><span class="label">layout shifts</span></div>
+            </div>
+          </div>
+          <div class="studio-art">
+            <div class="orb">
+              <span class="ring"></span>
+              <span class="ring"></span>
+              <span class="ring"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section-contact">
+        <div class="container contact-card" role="form">
+          <div class="contact-copy">
+            <h2>Let’s build something great</h2>
+            <p>Tell us a bit about your project and ideal timeline.</p>
+          </div>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="full">
+              <span>Project brief</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="actions">
+              <button class="btn primary" type="submit">Send</button>
+              <p class="form-note" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Auralis Studio</p>
+        <ul class="footer-nav">
+          <li><a href="#home">Top</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
