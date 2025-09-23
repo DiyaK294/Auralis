@@ -33,7 +33,7 @@ To run Auralis locally:
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/auralis.git
+git clone https://github.com/DiyaK294/Auralis-Studio.git
 
 # Enter project folder
 cd auralis
